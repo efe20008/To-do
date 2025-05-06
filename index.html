@@ -37,6 +37,15 @@
 					function entfernenAufgaben() {
 						document.getElementById("liste").removeChild(this);
 					}
+					<link rel="manifest" href="manifest.json">
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js")
+      .then(() => console.log("Service Worker registriert"))
+      .catch((err) => console.error("Fehler beim Registrieren des Service Workers:", err));
+  }
+
+
 				</script>
 		
 	</head>
